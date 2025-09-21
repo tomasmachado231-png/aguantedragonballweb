@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DESEOS</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: "DBZ";
+      src: url("fuentes/Dragon Ball.ttf") format("truetype");
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: linear-gradient(to right, red, orange, red);
+      background-size: cover;
+      position: relative;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Fondo fijo con overlay */
+    .fondo-img {
+      position: fixed;
+      top: 11%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0; /* detrás del contenido */
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .overlay-img {
+      position: absolute;
+      top: 50px; /* ajusta verticalmente */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 900px; /* tamaño de la imagen */
+    }
+
+    .titulo-dbz {
+      font-family: "DBZ", sans-serif;
+      text-align: center;
+      margin: 40px 0 20px 0;
+      font-size: 3rem;
+      color: #ffcc00;
+      text-shadow: 2px 2px 5px black;
+      z-index: 1;
+      position: relative;
+    }
+
+    .personaje-container {
+      margin-bottom: 60px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .personaje-img {
+      width: 100%;
+      max-width: 220px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+      z-index: 1;
+      position: relative;
+    }
+
+    .bio-text {
+      text-align: justify;
+      z-index: 1;
+      position: relative;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      color: #ff6600;
+      z-index: 1;
+      position: relative;
+    }
+
+    .btn-esfera {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+      cursor: pointer;
+      z-index: 1;
+      position: relative;
+    }
+
+    .btn-esfera:hover {
+      transform: scale(1.15);
+      box-shadow: 0 0 25px 10px rgba(255, 255, 0, 0.8);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fondo fijo -->
+  <div class="fondo-img">
+    <img src="fondo.png" alt="Fondo" class="overlay-img">
+  </div>
+
+  <!-- Título -->
+  <h1 class="titulo-dbz">DESEOS</h1>
+
+  <!-- Contenido -->
+  <div class="container">
+
+    <!-- Deseo 1 -->
+    <div class="row personaje-container">
+      <div class="col-md-4 text-center">
+        <img src="oolong.webp" alt="Oolong" class="personaje-img img-fluid">
+      </div>
+      <div class="col-md-8 bio-text">
+        <h2>Oolong pide una bombacha para arruinar el deseo de Pilaf.</h2>
+        <p>📌 Quién lo pidió: Oolong.</p>
+      </div>
+    </div>
+
+    <!-- Deseo 2 -->
+    <div class="row personaje-container">
+      <div class="col-md-4 text-center">
+        <img src="upa.webp" alt="Upa" class="personaje-img img-fluid">
+      </div>
+      <div class="col-md-8 bio-text">
+        <h2>Revivir al padre de Upa.</h2>
+        <p>📌 Quién lo pidió: Upa (con ayuda de Goku).</p>
+      </div>
+    </div>
+
+    <!-- Deseo 3 -->
+    <div class="row personaje-container">
+      <div class="col-md-4 text-center">
+        <img src="launch.webp" alt="Launch" class="personaje-img img-fluid">
+      </div>
+      <div class="col-md-8 bio-text">
+        <h2>El novio perfecto para Launch (no concedido, Shenlong desaparece antes).</h2>
+        <p>📌 Quién lo pidió: Launch.</p>
+      </div>
+    </div>
+
+    <!-- Deseo 4 -->
+    <div class="row personaje-container">
+      <div class="col-md-4 text-center">
+        <img src="pilaf.webp" alt="Pilaf" class="personaje-img img-fluid">
+      </div>
+      <div class="col-md-8 bio-text">
+        <h2>Revivir al General Blue (fallido, Pilaf fracasa).</h2>
+        <p>📌 Quién lo pidió: Pilaf.</p>
+      </div>
+    </div>
+
+    <!-- Deseo 5 -->
+    <div class="row personaje-container">
+      <div class="col-md-4 text-center">
+        <img src="gokuchikito.jpg" alt="Goku niño" class="personaje-img img-fluid">
+      </div>
+      <div class="col-md-8 bio-text">
+        <h2>Revivir a Bora.</h2>
+        <p>📌 Quién lo pidió: Upa, con ayuda de Goku y Shenlong.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Botón volver -->
+  <div class="text-center my-4">
+    <a href="../index.html">
+      <img src="esfera4.png" alt="Volver al inicio" class="btn-esfera">
+    </a>
+  </div>
+
+</body>
+</html>
+

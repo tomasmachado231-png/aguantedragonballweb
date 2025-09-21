@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MUERTES</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: "DBZ";
+      src: url("fuentes/Dragon Ball.ttf") format("truetype");
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: linear-gradient(to right, red, orange, red);
+      background-size: cover;
+      position: relative;
+      font-family: Arial, sans-serif;
+    }
+
+    .fondo-img {
+      position: fixed;
+      top: 11%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .overlay-img {
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 900px;
+    }
+
+    .titulo-dbz {
+      font-family: "DBZ", sans-serif;
+      text-align: center;
+      margin: 40px 0 20px 0;
+      font-size: 3rem;
+      color: #ffcc00;
+      text-shadow: 2px 2px 5px black;
+      z-index: 1;
+      position: relative;
+    }
+
+    .personaje-container {
+      margin-bottom: 60px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .personaje-img {
+      width: 100%;
+      max-width: 220px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+      z-index: 1;
+      position: relative;
+    }
+
+    .bio-text {
+      text-align: justify;
+      z-index: 1;
+      position: relative;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      color: #ff6600;
+      z-index: 1;
+      position: relative;
+    }
+
+    .btn-esfera {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+      cursor: pointer;
+      z-index: 1;
+      position: relative;
+    }
+
+    .btn-esfera:hover {
+      transform: scale(1.15);
+      box-shadow: 0 0 25px 10px rgba(255, 255, 0, 0.8);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fondo fijo -->
+  <div class="fondo-img">
+    <img src="fondo.png" alt="Fondo" class="overlay-img">
+  </div>
+
+  <!-- Título -->
+  <h1 class="titulo-dbz">MUERTES</h1>
+
+  <!-- Contenido -->
+  <div class="container">
+
+    <!-- Muerte 1 -->
+    <div class="row personaje-container">
+      <div class="col-md-4 text-center">
+        <img src="krillin.webp" alt="Muerte 1" class="personaje-img img-fluid">
+      </div>
+      <div class="col-md-8 bio-text">
+        <h2>Krillin muere a manos de Tambourine.</h2>
+        <p>📌 Contexto: Krillin es asesinado mientras lucha contra los secuaces de King Piccolo.</p>
+      </div>
+    </div>
+
+    <!-- Muerte 2 -->
+    <div class="row personaje-container">
+      <div class="col-md-4 text-center">
+        <img src="yamcha.webp" alt="Muerte 2" class="personaje-img img-fluid">
+      </div>
+      <div class="col-md-8 bio-text">
+        <h2>Yamcha es derrotado por Tenshinhan.</h2>
+        <p>📌 Contexto: Durante un entrenamiento, Yamcha recibe un golpe mortal accidental.</p>
+      </div>
+    </div>
+
+    <!-- Muerte 3 -->
+    <div class="row personaje-container">
+      <div class="col-md-4 text-center">
+        <img src="roshi.webp" alt="Muerte 3" class="personaje-img img-fluid">
+      </div>
+      <div class="col-md-8 bio-text">
+        <h2>El Maestro Roshi finge su muerte para enseñar una lección.</h2>
+        <p>📌 Contexto: Roshi simula su muerte para que Goku aprenda el valor de la vida y la responsabilidad.</p>
+      </div>
+    </div>
+
+    <!-- Muerte 4 -->
+    <div class="row personaje-container">
+      <div class="col-md-4 text-center">
+        <img src="goku.webp" alt="Muerte 4" class="personaje-img img-fluid">
+      </div>
+      <div class="col-md-8 bio-text">
+        <h2>Goku es dado por muerto tras la pelea con King Piccolo.</h2>
+        <p>📌 Contexto: Creyéndolo muerto, los amigos lloran su sacrificio antes de que sea revivido con las Dragon Balls.</p>
+      </div>
+    </div>
+
+    <!-- Muerte 5 -->
+    <div class="row personaje-container">
+      <div class="col-md-4 text-center">
+        <img src="pilaf.webp" alt="Muerte 5" class="personaje-img img-fluid">
+      </div>
+      <div class="col-md-8 bio-text">
+        <h2>Pilaf y sus secuaces son temporalmente destruidos por Goku.</h2>
+        <p>📌 Contexto: Después de su derrota, el grupo es aparentemente eliminado, pero regresará más adelante.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Botón volver -->
+  <div class="text-center my-4">
+    <a href="../index.html">
+      <img src="esfera4.png" alt="Volver al inicio" class="btn-esfera">
+    </a>
+  </div>
+
+</body>
+</html>
+
